@@ -1,22 +1,67 @@
 body{
     background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+input.underline {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width : 1;
+    border-color: white;
+    padding: 1px;
+    
+    font-size: 15px;
+    background-color: transparent;
+
+}
+
+input[type="text"] {
+    color: white;
 }
 
 .form,
 .greetings{
     display:none;
-
 }
+
 .showing{
     display: block;
+    font-size: 25px;
+    
+}
+
+
+form input::placeholder{
+    color: white;
+    
+}
+
+form input:focus{
+    border-color: transparent;
+    color:white;
+
 }
 
 .btn {
-    cursor: pointer;
+    cursor: white;
 }
 body {
-    color:#34495e;
+    color: white;
 }
+
+
+.js-clock{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
 
 .clicked {
     color: #2c3e50;
@@ -40,4 +85,17 @@ body {
     height: 100%;
     z-index: -1;
     animation: fadeIn .5s linear;
+}
+li {
+    list-style-type: none;
+}
+li button {
+    font-size: 10px;
+    border: none;
+    padding-right: 1px;
+    padding-left: 2px;
+    margin-right: 3px;
+}
+li span{
+    top: 10px;
 }
